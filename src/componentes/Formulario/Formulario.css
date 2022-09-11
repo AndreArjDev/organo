@@ -1,0 +1,15 @@
+.formulario{
+    
+    margin: 2% auto;
+    align-content: center;
+    padding: 2%;
+    background-color: #eee;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.7);
+}
+
+.formulario h2{
+    text-align: center;
+}
+
