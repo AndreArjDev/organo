@@ -9,8 +9,7 @@ function App() {
 
   const aoNovoColaborador = (colaborador) => {
       setColaboradores([...colaboradores,colaborador])
-      console.log(colaboradores)
-      
+            
   }
   
   return (
