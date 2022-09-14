@@ -4,11 +4,14 @@ import ListaSuspensa from '../ListaSuspensa';
 import Botao from '../Botao';
 import { useState } from 'react';
 
-const times = ['','Programação','Jogos','Português']; 
+
 
   
 
 const Formulario = (props) => {
+
+    
+    
     const [nome,setNome] = useState('') 
     const [cargo,setCargo] = useState('')
     const [imagem,setImagem] = useState('')
@@ -48,7 +51,7 @@ const Formulario = (props) => {
                 <ListaSuspensa 
                     obrigatorio ={true} 
                     label="Time" 
-                    itens = {times}
+                    itens = {props.times}
                     valor = {time}
                     aoAlterar={valor => setTime(valor)}
                 />
