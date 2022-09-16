@@ -19,7 +19,13 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) =>{
         evento.preventDefault();
-        console.log(props.aoCadastrar({nome,cargo,imagem,time}))
+        props.aoCadastrar({nome,cargo,imagem,time});
+        setNome('');
+        setCargo('');
+        setImagem('');
+        setTime('');
+
+        
     }
     
 
@@ -29,7 +35,7 @@ const Formulario = (props) => {
             <form onSubmit={aoSalvar}>
                 <h2>Preencha o formulario com os dados do colaborador</h2>
                 <CampoTexto 
-                    obrigatorio ={true} 
+                    obrigatorio = {true} 
                     label="Nome" 
                     placeholder="Digite seu nome"
                     valor = {nome} 
